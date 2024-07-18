@@ -1,5 +1,6 @@
-import { Grid, Button } from '@mui/material'
 import React, { useState } from 'react'
+
+import { Grid, Button } from '@mui/material'
 import { OutPutContainer } from '../style/styleCalc'
 import { GridDigitButton } from './GridDigitButton'
 import { GridOperationButton } from './GridOperationButton'
@@ -86,7 +87,13 @@ const GridAllOperation = () => {
 			<Grid item xs={12}>
 				<OutPutContainer>{currentValue}</OutPutContainer>
 			</Grid>
-			<div style={{ width: '100%', borderBottom: '1px solid #fff' }}></div>
+			<div
+				style={{
+					width: '100%',
+					borderBottom: '1px solid #fff',
+					opacity: '50%',
+				}}
+			></div>
 			<Grid item container columnSpacing={1}>
 				<GridOperationButton
 					operation={'AC'}
